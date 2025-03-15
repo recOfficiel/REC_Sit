@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Actualités et Evenements</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/LOGO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @keyframes pulse {
+            0% { opacity: 0.6; }
+            50% { opacity: 1; }
+            100% { opacity: 0.6; }
+        }
+
+        .hover-zoom:hover img {
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+      
+      
+        </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+      <!-- Topbar Start -->
+      <div class="container-fluid" style="background-color: #293070; color: white;">
+          <div class="container py-3">
+              <div class="d-flex flex-column flex-lg-row align-items-center">
+                  <a href="index.html" class="d-flex align-items-center mb-3 mb-lg-0 d-none d-lg-flex">
+                      <img src="img/LOGO.png" alt="R.E.C Logo" style="height: 60px;">
+                      <p class="text-white fw-bold mb-0 ms-3 animate__animated animate__bounce animate__infinite">R.E.C - Répresentation des Etudians du Congo</p>
+                  </a>                
+                  <div class="ms-lg-auto d-flex align-items-center">
+                      <small class="ms-lg-4 d-none d-lg-block"><i class="fa fa-map-marker-alt me-3"></i>Kinshasa, Gombe 23bis</small>
+                      <small class="ms-lg-4 d-none d-lg-block"><i class="fa fa-envelope me-3"></i>recofficiel319@gmail.com</small>
+                      <small class="ms-lg-4 d-none d-lg-block"><i class="fa fa-phone-alt me-3"></i>+243000000000</small>
+                      <div class="ms-lg-3 d-flex">
+                          <a class="btn btn-sm-square btn-light rounded-circle ms-2 animate__animated hover-animate" href="" onmouseover="this.classList.add('animate__pulse')" onmouseout="this.classList.remove('animate__pulse')" style="color: #000959;"><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-sm-square btn-light rounded-circle ms-2 animate__animated hover-animate" href="" onmouseover="this.classList.add('animate__pulse')" onmouseout="this.classList.remove('animate__pulse')" style="color: #000959;"><i class="fab fa-twitter"></i></a>
+                          <a class="btn btn-sm-square btn-light rounded-circle ms-2 animate__animated hover-animate" href="" onmouseover="this.classList.add('animate__pulse')" onmouseout="this.classList.remove('animate__pulse')" style="color: #000959;"><i class="fab fa-linkedin-in"></i></a>
+                      </div>            
+                  </div>                  
+                </div>          
+              </div>
+          </div>
+      </div>
+      <!-- Topbar End -->
+
+
+
+      <!-- Navbar Start -->
+      <div class="container-fluid bg-white sticky-top">
+          <div class="container">
+              <nav class="navbar navbar-expand-lg bg-white navbar-light p-lg-0">
+                  <a href="index.html" class="navbar-brand d-lg-none">
+                      <img src="img/LOGO.png" alt="R.E.C Logo" style="height: 40px;">
+                      <h1 class="fw-bold m-0">R.E.C</h1>
+                  </a>
+                  <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarCollapse">
+                      <div class="navbar-nav">
+                          <a href="index.html" class="nav-item nav-link active wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">Accueil</a>
+                          <a href="about.html" class="nav-item nav-link wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">À propos</a>
+                          <a href="event.html" class="nav-item nav-link wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">Actualités et Evénements</a>
+                          <a href="#" class="nav-item nav-link wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">Services aux Etudiants</a>
+                          <div class="nav-item dropdown wow fadeInDown">
+                              <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">Autre Pages</a>
+                              <div class="dropdown-menu bg-light rounded-0 rounded-bottom m-0">
+                                  <a href="#" class="dropdown-item">Caractéristiques</a>
+                                  <a href="#" class="dropdown-item" >Notre Équipe</a>
+                                  <a href="#" class="dropdown-item">Témoignages</a>
+                                  <a href="#" class="dropdown-item">Gallery</a>
+                                  <a href="#" class="dropdown-item">FAQ</a>
+                              </div>
+                          </div>
+                          <a href="contact.html" class="nav-item nav-link wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">Contact</a>
+                      </div>
+                      <div class="ms-auto d-none d-lg-block">
+                          <a href="" class="btn btn-primary rounded-pill py-2 px-3 wow fadeInDown" data-wow-delay="0.1s" onmouseover="this.style.color='#ffff'" onmouseout="this.style.color=''" style="background-color: #293070;">Télécharger</a>
+                      </div>            
+                  </div>
+              </nav>
+          </div>
+      </div>
+      <!-- Navbar End -->
+
+       <!-- actu Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" style="background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/Actualité.jpg) center center no-repeat; background-size: cover;">
+        <div class="container text-center py-5">
+            <h1 class="display-2 text-white mb-4 animated slideInDown">Actualités et Evenement</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">A-propos</a></li>
+                    <li class="breadcrumb-item text-primary" aria-current="page">Actualités</li>
+                </ol>
+            </nav>
+        </div>
+    </div>    
+
+    <!-- Page Header End -->
+      <!-- recherche Start -->
+     <div class="container mb-5">
+         <div class="row justify-content-center">
+             <div class="col-12 col-md-8 col-lg-6">
+                 <div class="input-group">
+                     <input type="text" class="form-control" placeholder="Rechercher une actualité..." aria-label="Rechercher">
+                     <button class="btn" type="button" style="background-color: #3C3882; color: white;">
+                         <i class="fas fa-search"></i>
+                     </button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!--recherhce end -->
+        <!-- Actualités Start -->
+    <section class="products section-padding position-relative">
+        <div class="container">
+          <div class="row">
+            <!-- Start of Post -->
+            <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+              <div class="card border-0 shadow-lg h-100 hover-shadow">
+                <div class="product-thumb position-relative overflow-hidden">
+                  <a href="show.html" class="hover-zoom">
+                    <img src="img/LOGO.png" class="img-fluid product-image" alt="actu" width="1232" height="816">
+                  </a>
+                </div>
+                <div class="product-info p-4">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between mb-2">
+                      <small class="text-muted">27 Novembre 2024</small>
+                      <small class="text-danger"><a href="#" class="">Événement</a></small>
+                    </div>
+                    <h5 class="product-title">
+                      <a href="show.html" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                        Lancement du programme REC
+                      </a>
+                    </h5>
+                    <a href="show.html">
+                      <p class="text-muted">
+                        La REC lance officiellement son programme d'accompagnement des étudiants congolais pour faciliter leur intégration professionnelle...
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Post -->
+            <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+                <div class="card border-0 shadow-lg h-100 hover-shadow">
+                  <div class="product-thumb position-relative overflow-hidden">
+                    <a href="show.html" class="hover-zoom">
+                      <img src="img/LOGO.png" class="img-fluid product-image custom-image" alt="actu">
+                    </a>
+                  </div>
+                  <div class="product-info p-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">26 Novembre 2024</small>
+                        <small class="text-danger"><a href="#" class="">Info</a></small>
+                      </div>
+                      <h5 class="product-title">
+                        <a href="#" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                         Partenariat avec les universités
+                        </a>
+                      </h5>
+                      <a href="#">
+                        <p class="text-muted">
+                            La REC signe des conventions avec plusieurs universités congolaises pour faciliter l'accès aux stages et à l'emploi...
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+               <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+                <div class="card border-0 shadow-lg h-100 hover-shadow">
+                  <div class="product-thumb position-relative overflow-hidden">
+                    <a href="show.html" class="hover-zoom">
+                      <img src="img/LOGO.png" class="img-fluid product-image" alt="actu">
+                    </a>
+                  </div>
+                  <div class="product-info p-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">25 Novembre 2024</small>
+                        <small class="text-danger"><a href="#" class="">Formation</a></small>
+                      </div>
+                      <h5 class="product-title">
+                        <a href="#" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                            Ateliers de développement professionnel
+                        </a>
+                      </h5>
+                      <a href="#">
+                        <p class="text-muted">
+                            La REC organise des ateliers de formation sur la rédaction de CV, la préparation aux entretiens et le développement personnel...
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+              <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+                <div class="card border-0 shadow-lg h-100 hover-shadow">
+                  <div class="product-thumb position-relative overflow-hidden">
+                    <a href="show.html" class="hover-zoom">
+                      <img src="img/LOGO.png" class="img-fluid product-image" alt="actu">
+                    </a>
+                  </div>
+                  <div class="product-info p-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">2 Novembre 2024</small>
+                        <small class="text-danger"><a href="#" class="">Mentorat</a></small>
+                      </div>
+                      <h5 class="product-title">
+                        <a href="#" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                         Programme de mentorat REC
+                        </a>
+                      </h5>
+                      <a href="#">
+                        <p class="text-muted">
+                            Lancement du programme de mentorat connectant les étudiants avec des professionnels expérimentés dans leur domaine...
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+                <div class="card border-0 shadow-lg h-100 hover-shadow">
+                  <div class="product-thumb position-relative overflow-hidden">
+                    <a href="show.html" class="hover-zoom">
+                      <img src="img/LOGO.png" class="img-fluid product-image" alt="actu">
+                    </a>
+                  </div>
+                  <div class="product-info p-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">28 Octobre 2024</small>
+                        <small class="text-danger"><a href="#" class="">Innovation</a></small>
+                      </div>
+                      <h5 class="product-title">
+                        <a href="#" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                          Plateforme numérique REC
+                        </a>
+                      </h5>
+                      <a href="#">
+                        <p class="text-muted">
+                            La REC lance sa plateforme numérique pour faciliter la mise en relation entre étudiants et entreprises...
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+              <div class="col-lg-4 col-12 mb-4 wow fadeInUp animate__animated animate__bounce" data-wow-delay="0.1s">
+                <div class="card border-0 shadow-lg h-100 hover-shadow">
+                  <div class="product-thumb position-relative overflow-hidden">
+                    <a href="show.html" class="hover-zoom">
+                      <img src="img/LOGO.png" class="img-fluid product-image" alt="actu" width="1232" height="816">
+                    </a>
+                  </div>
+                  <div class="product-info p-4">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between mb-2">
+                        <small class="text-muted">3 Octobre 2024</small>
+                        <small class="text-danger"><a href="#" class="">Réussite</a></small>
+                      </div>
+                      <h5 class="product-title">
+                        <a href="#" class="text-dark text-decoration-none hover-text" onmouseover="this.style.color='#3C3882'" onmouseout="this.style.color=''">
+                            Premier succès du programme REC
+                        </a>
+                      </h5>
+                      <a href="#">
+                        <p class="text-muted">
+                            Célébration des premiers étudiants ayant trouvé un emploi grâce au programme d'accompagnement de la REC...
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- Repeat the block above for other posts -->
+          </div>
+        </div>
+      </section>
+    <!-- actu end -->
+
+          
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Notre Bureau</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Rue de la Paix, Kinshasa, RDC</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+243 999 999 999</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>contact@rec-kin.org</p>
+                <div class="d-flex pt-3">
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-square btn-light rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Liens Rapides</h4>
+                <a class="btn btn-link" href="">À Propos</a>
+                <a class="btn btn-link" href="">Nous Contacter</a>
+                <a class="btn btn-link" href="">Nos Services</a>
+                <a class="btn btn-link" href="">Conditions Générales</a>
+                <a class="btn btn-link" href="">Support</a>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Heures d'Ouverture</h4>
+                <p class="mb-1">Lundi - Vendredi</p>
+                <h6 class="text-light">08:00 - 17:00</h6>
+                <p class="mb-1">Samedi</p>
+                <h6 class="text-light">09:00 - 12:00</h6>
+                <p class="mb-1">Dimanche</p>
+                <h6 class="text-light">Fermé</h6>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="text-white mb-4">Newsletter</h4>
+                <p>Restez informé de nos activités et événements.</p>
+                <div class="position-relative w-100">
+                    <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Votre email">
+                    <button type="button" class="btn btn-light py-2 position-absolute top-0 end-0 mt-2 me-2">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy; <a class="fw-medium text-light" href="#">R.E.C</a>, Tous droits réservés..
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+              <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+              Designed By <a class="fw-medium text-light" href="https://htmlcodex.com">ISIP'A_KOMORIKO</a>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Copyright End -->
+
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+
+</html>
