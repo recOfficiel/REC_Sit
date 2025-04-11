@@ -89,6 +89,19 @@ a {
 a:hover {
     color: #1e2450;
 }
+/* Ajouts spécifiques à la page d'inscription */
+.form-text {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-top: 0.25rem;
+}
+
+
+/* Style pour la case à cocher des CGU */
+.form-check-input:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
 
 /* Responsive adjustments */
 @media (max-width: 576px) {
