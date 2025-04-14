@@ -95,18 +95,14 @@
                 </nav>                    
                 <!-- Main content -->               
                   <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                  
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <div class="d-flex align-items-center">
-                            <img src="img/LOGO.png" alt="Logo R.E.C" class="me-3" width="70" height="61">
-                            <h1 class="h2 animate__animated animate__fadeIn">Tableau de Bord R.E.C</h1>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            
-                            <!-- Search Bar -->
-                            <div class="position-relative me-3">
-                                <input type="search" class="form-control" placeholder="Rechercher...">
-                                <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-2"></i>
-                            </div>
+                        <button class="navbar-toggler d-md-none collapsed me-auto animate__animated animate__fadeIn animate__delay-1s" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-bars fa-2x me-1"></i>
+                        </button>
+                        
+                        <div class="d-flex align-items-center"><img src="img/LOGO.png" alt="Logo R.E.C" class="me-3" width="70" height="61"><h1 class="h2 animate__animated animate__fadeIn">Tableau de Bord</h1></div>
+                        <div class="d-flex align-items-center">                            
                             <!-- Notifications -->
                             <div class="dropdown me-3">
                                 <button class="btn btn-link position-relative" type="button" id="notificationsDropdown" data-bs-toggle="dropdown">
@@ -122,9 +118,7 @@
                                     <a class="dropdown-item fw-bold" href="#">Mise à jour système</a>
                                 </div>
                             </div>
-                            <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                                <i class="fas fa-bars"></i>
-                            </button>
+                            
                               <!-- Profile Dropdown -->
                               <div class="dropdown">
                                 <button class="btn btn-link dropdown-toggle d-flex align-items-center" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
@@ -142,13 +136,26 @@
                         </div>
                         </div>                                  
                     <!-- Statistics Cards -->
-
                      <!-- Welcome Message -->
                      <div class="text-dark mb-4 animate__animated animate__fadeIn fw-bold" style="font-size: 1.25rem;">
                          <i class="fas fa-hand-wave me-2"></i>
                          <span id="welcomeMessage">Bonjour <span id="userName" class="text-info">Nathan MBONGI</span>, bienvenue à la REC 🥳🤩💦!</span>
                      </div>
-                    
+                     <!-- Search Section -->
+                     <div class="row mb-4 animate__animated animate__fadeIn">
+                        <div class="col-12">
+                            <div class="card shadow rounded-3">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="Rechercher un étudiant, une université..." aria-label="Search">
+                                        <button class="btn btn-primary" type="button">
+                                            <i class="fas fa-search"></i> Rechercher
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row animate__animated animate__fadeInUp">
                         <div class="col-12 col-sm-6 col-xl-3 mb-4">
                             <div class="card border-left-primary shadow h-100 py-3 hover-card rounded-3">
