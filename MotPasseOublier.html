@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de Passe Oublié</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Notre CSS personnalisé -->
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center align-items-center min-vh-100">
+            <div class="col-md-8 col-lg-6">
+                <div class="login-card p-4 p-md-5">
+                    <div class="text-center mb-4">
+                        <img src="img/LOGO.png" alt="Logo REC" class="mb-3" style="max-width: 150px;">
+                        <h2 class="fw-bold">Mot de passe oublié</h2>
+                        <p class="text-muted">Entrez votre adresse e-mail pour recevoir un lien de réinitialisation 💡 !</p>
+                    </div>
+
+                    <form class="animate__animated animate__fadeInUp shadow p-4 rounded">
+                        <!-- Adresse e-mail -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Adresse e-mail</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="fas fa-envelope" style="color: #28a745;"></i></span>
+                                <input type="email" class="form-control" id="email" placeholder="exemple@email.com" required>
+                            </div>
+                        </div>
+
+                        <!-- Message d'aide -->
+                        <div class="mb-4">
+                            <small class="text-muted">
+                                Un e-mail contenant les instructions de réinitialisation vous sera envoyé.
+                            </small>
+                        </div>
+
+                        <!-- Bouton d'envoi -->
+                        <a href="ResetMotDePasse.html" class="btn btn-primary w-100 mb-3">Envoyer le lien de réinitialisation</a>
+
+                        <!-- Liens de retour -->
+                        <div class="text-center mt-4">
+                            <p class="text-muted">Retourner à la <a href="login.html" class="text-decoration-none">page de connexion</a></p>
+                        </div>
+                        <div class="text-center">
+                            <a href="login.html" class="text-decoration-none">
+                                <i class="fas fa-arrow-left me-2"></i>Retour
+                            </a>
+                        </div>
+                    </form>
+                    <!-- Téléchargement de l'application -->
+                    <div class="text-center mt-3">
+                        <p class="text-muted">Téléchargez notre application pour une meilleure expérience 🚀!</p>
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="#" class="btn btn-outline-dark">
+                                <i class="fas fa-registered me-2"></i>Rec App                                                </a>
+                           
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
