@@ -97,16 +97,16 @@
                   <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                   
                     <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-                        <button class="navbar-toggler d-md-none collapsed me-auto animate__animated animate__fadeIn animate__delay-1s" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler d-lg-none collapsed me-auto animate__animated animate__fadeIn animate__delay-1s" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars fa-2x me-1"></i>
                         </button>
                         
-                        <div class="d-flex align-items-center"><img src="img/LOGO.png" alt="Logo R.E.C" class="me-3" width="70" height="61"><h1 class="h2 animate__animated animate__fadeIn">Tableau de Bord</h1></div>
+                        <div class="d-flex align-items-center"><img src="img/LOGO.png" alt="Logo R.E.C" class="me-3" width="50" height="43"><h1 class="h3 animate__animated animate__fadeIn">REC</h1></div>
                         <div class="d-flex align-items-center">                            
                             <!-- Notifications -->
-                            <div class="dropdown me-3">
+                            <div class="dropdown me-2">
                                 <button class="btn btn-link position-relative" type="button" id="notificationsDropdown" data-bs-toggle="dropdown">
-                                    <i class="fas fa-bell fa-lg"></i>
+                                    <i class="fas fa-bell"></i>
                                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                         3
                                     </span>
@@ -120,17 +120,30 @@
                             </div>
                             
                               <!-- Profile Dropdown -->
-                              <div class="dropdown">
+                              <div class="dropdown d-none d-lg-block">
                                 <button class="btn btn-link dropdown-toggle d-flex align-items-center" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                    <img src="img/LOGO.png" class="rounded-circle me-2" width="32" height="32" alt="Profile">
-                                    <span class="fw-bold">John Doe</span>
+                                    <img src="img/LOGO.png" class="rounded-circle me-2" width="28" height="28" alt="Profile">
+                                    <span class="fw-bold small">John Doe</span>
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn" aria-labelledby="profileDropdown">
-                                    <li><a class="dropdown-item fw-bold" href="#"><i class="fas fa-user me-2"></i>Mon Profil</a></li>
-                                    <li><a class="dropdown-item fw-bold" href="#"><i class="fas fa-cog me-2"></i>Paramètres</a></li>
-                                    <li><a class="dropdown-item fw-bold" href="#"><i class="fas fa-question-circle me-2"></i>Aide</a></li>
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-user me-2"></i>Mon Profil</a></li>
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-cog me-2"></i>Paramètres</a></li>
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-question-circle me-2"></i>Aide</a></li>
                                     <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item text-danger fw-bold" href="#"><i class="fas fa-sign-out-alt me-2"></i>Se déconnecter</a></li>
+                                    <li><a class="dropdown-item text-danger fw-bold small" href="#"><i class="fas fa-sign-out-alt me-2"></i>Se déconnecter</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown d-block d-lg-none">
+                                <button class="btn btn-link dropdown-toggle d-flex align-items-center p-0" type="button" id="profileDropdownMobile" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <img src="img/LOGO.png" class="rounded-circle me-1" width="28" height="28" alt="Profile">
+                                    <span class="fw-bold small">John</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-end animate__animated animate__fadeIn" aria-labelledby="profileDropdownMobile">
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-user me-2"></i>Mon Profil</a></li>
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-cog me-2"></i>Paramètres</a></li>
+                                    <li><a class="dropdown-item fw-bold small" href="#"><i class="fas fa-question-circle me-2"></i>Aide</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger fw-bold small" href="#"><i class="fas fa-sign-out-alt me-2"></i>Se déconnecter</a></li>
                                 </ul>
                             </div>
                         </div>
